@@ -105,8 +105,10 @@ export default {
   methods: {
     questionAnswered(isCorrect) {
       if (isCorrect) {
-        this.totalCorrect++
+        this.totalCorrect++;
       }
+
+      this.questionsAnswered++;
     }
   }
 }
